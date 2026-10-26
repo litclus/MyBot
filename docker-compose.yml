@@ -1,0 +1,94 @@
+# MyBot 本地基础设施
+#
+#   docker compose up -d            启动 postgres
+#   docker compose --profile tools up -d adminer
+#   docker compose ps               查看状态
+#   docker compose logs -f postgres 查看日志
+#
+# 连接串（应用侧）：
+#   postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@127.0.0.1:${POSTGRES_PORT}/${POSTGRES_DB}
+#
+# 约定：
+#   - 端口只绑定 127.0.0.1，不暴露公网
+#   - 数据库时区固定 UTC，展示时区由应用处理
+#   - docker/initdb 只在数据卷为空时执行；之后新增扩展需手动执行
+
+name: mybot
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    container_name: mybot-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-mybot}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      POSTGRES_DB: ${POSTGRES_DB:-mybot}
+      TZ: UTC
+      PGTZ: UTC
+    command:
+      - postgres
+      - -c
+      - timezone=UTC
+      - -c
+      - shared_buffers=256MB
+      - -c
+      - work_mem=16MB
+      - -c
+      - maintenance_work_mem=256MB
+      - -c
+      - max_connections=50
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./docker/initdb:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER:-mybot} -d $${POSTGRES_DB:-mybot}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    shm_size: 256mb
+
+  # 可选：浏览器里看表和数据
+  # docker compose --profile tools up -d adminer
+  adminer:
+    image: adminer:4
+    container_name: mybot-adminer
+    restart: unless-stopped
+    profiles: ["tools"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      ADMINER_DEFAULT_SERVER: postgres
+    ports:
+      - "127.0.0.1:${ADMINER_PORT:-8080}:8080"
+
+  # 可选：整个机器人都跑在容器里
+  # docker compose --profile app up -d --build
+  bot:
+    build:
+      context: .
+    container_name: mybot-app
+    profiles: ["app"]
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      HEALTH_HOST: 0.0.0.0
+      HEALTH_PORT: 8787
+      PANEL_HOST: 0.0.0.0
+      PANEL_PORT: ${PANEL_PORT:-8788}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:8787:8787"
+      - "127.0.0.1:${PANEL_PORT:-8788}:${PANEL_PORT:-8788}"
+
+volumes:
+  pgdata:
+    name: mybot-pgdata

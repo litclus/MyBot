@@ -1,0 +1,20 @@
+[
+  {
+    "keyword": "token来",
+    "aliases": ["token 来", "token來"],
+    "title": "token来 / token回",
+    "meaning": "AI 圈和 DeepSeek 社区流行的呼叫-回应梗：有人刷「token来✋😡🤚」，其他人用等量的「token回✋😡🤚」回应，表示互相喂 token。",
+    "replyGuide": "统计消息里「token来」出现的次数，回复等量的「token回✋😡🤚」，不要多也不要少。",
+    "examples": [
+      {
+        "input": "token来✋😡🤚 token来✋😡🤚 token来✋😡🤚",
+        "reply": "token回✋😡🤚token回✋😡🤚token回✋😡🤚"
+      }
+    ],
+    "tags": ["AI", "DeepSeek", "呼叫回应", "刷屏"],
+    "heat": 5,
+    "status": "active",
+    "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3817425857",
+    "sourceTitle": "Steam 创意工坊评论区 / Bilibili「token来」视频"
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "name": "mybot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.34.7",
+  "engines": {
+    "node": ">=22"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "onnxruntime-node",
+      "protobufjs"
+    ],
+    "overrides": {
+      "onnxruntime-node": "1.20.1",
+      "onnxruntime-common": "1.20.1"
+    }
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "start": "tsx src/index.ts",
+    "smoke:model": "tsx tests/smoke/model.ts",
+    "smoke:agent": "tsx tests/smoke/agent.ts",
+    "smoke:db": "tsx tests/smoke/db.ts",
+    "smoke:pipeline": "tsx tests/smoke/pipeline.ts",
+    "smoke:enrich": "tsx tests/smoke/enrich.ts",
+    "smoke:embed": "tsx tests/smoke/embed.ts",
+    "smoke:search": "tsx tests/smoke/search.ts",
+    "smoke:meme": "tsx tests/smoke/meme.ts",
+    "smoke:mention": "tsx tests/smoke/mention.ts",
+    "smoke:format": "tsx tests/smoke/format.ts",
+    "smoke:image": "tsx tests/smoke/image.ts",
+    "smoke:media": "tsx tests/smoke/media.ts",
+    "image:list": "tsx src/scripts/image-tool.ts list",
+    "image:media": "tsx src/scripts/image-tool.ts media",
+    "image:send": "tsx src/scripts/image-tool.ts send",
+    "image:recompress": "tsx src/scripts/image-recompress.ts",
+    "image:add": "tsx src/scripts/image-add.ts",
+    "smoke:prompt": "tsx tests/smoke/prompt.ts",
+    "smoke:gateway": "tsx tests/smoke/gateway.ts",
+    "db:push": "drizzle-kit push --force && tsx src/scripts/db-comments.ts",
+    "db:comments": "tsx src/scripts/db-comments.ts",
+    "db:studio": "drizzle-kit studio",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test \"tests/**/*.test.ts\""
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.1",
+    "@langchain/core": "^1.3.0",
+    "@langchain/langgraph": "^1.5.2",
+    "drizzle-orm": "^0.45.4",
+    "pg": "^8.23.1",
+    "sharp": "^0.35.5",
+    "ws": "^8.22.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/pg": "^8.23.1",
+    "@types/ws": "^8.18.2",
+    "drizzle-kit": "^0.31.11",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

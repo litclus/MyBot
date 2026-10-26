@@ -1,0 +1,25 @@
+export type MemoryRow = {
+  id: number;
+  conversationId: string;
+  personId: string | null;
+  scope: string;
+  kind: string;
+  subject: string | null;
+  predicate: string | null;
+  object: string | null;
+  content: string;
+  tags: string[];
+  importance: number;
+  confidence: number | null;
+  sourceMsgIds: string[];
+  periodStart: Date | null;
+  periodEnd: Date | null;
+  validFrom: Date | null;
+  validTo: Date | null;
+  expiresAt: Date | null;
+  supersededBy: number | null;
+  accessCount: number;
+  lastUsedAt: Date | null;
+  embedding: number[] | null;
+  createdAt: Date;
+};

@@ -1,0 +1,2927 @@
+{
+  "source": "https://bot.q.qq.com/wiki/develop/api-v2/",
+  "generated": "2026-10-23",
+  "count": 195,
+  "pages": [
+    {
+      "title": "删除子频道",
+      "path": "api-v2/autogen/api/channels_channel_id.delete.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/channels_channel_id.delete.html",
+      "last_updated": "7/22/2026, 6:23:09 PM",
+      "headings": [
+        "删除子频道",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求示例",
+        "响应",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "获取子频道详情",
+      "path": "api-v2/autogen/api/channels_channel_id.get.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/channels_channel_id.get.html",
+      "last_updated": "7/22/2026, 6:23:09 PM",
+      "headings": [
+        "获取子频道详情",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "修改子频道",
+      "path": "api-v2/autogen/api/channels_channel_id.patch.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/channels_channel_id.patch.html",
+      "last_updated": "7/22/2026, 6:23:09 PM",
+      "headings": [
+        "修改子频道",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "获取通用 WSS 接入点",
+      "path": "api-v2/autogen/api/gateway.get.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/gateway.get.html",
+      "last_updated": "7/22/2026, 6:23:09 PM",
+      "headings": [
+        "获取通用 WSS 接入点",
+        "请求",
+        "基础信息",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "获取频道详情",
+      "path": "api-v2/autogen/api/guilds_guild_id.get.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/guilds_guild_id.get.html",
+      "last_updated": "7/22/2026, 6:23:09 PM",
+      "headings": [
+        "获取频道详情",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "获取子频道列表",
+      "path": "api-v2/autogen/api/guilds_guild_id_channels.get.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/guilds_guild_id_channels.get.html",
+      "last_updated": "7/22/2026, 6:23:09 PM",
+      "headings": [
+        "获取子频道列表",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "创建子频道",
+      "path": "api-v2/autogen/api/guilds_guild_id_channels.post.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/guilds_guild_id_channels.post.html",
+      "last_updated": "7/22/2026, 6:23:09 PM",
+      "headings": [
+        "创建子频道",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "互动事件响应",
+      "path": "api-v2/autogen/api/interactions_interaction_id.put.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/interactions_interaction_id.put.html",
+      "last_updated": "8/12/2026, 8:53:07 PM",
+      "headings": [
+        "互动事件响应",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "获取机器人详情",
+      "path": "api-v2/autogen/api/users_me.get.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/users_me.get.html",
+      "last_updated": "7/22/2026, 6:23:09 PM",
+      "headings": [
+        "获取机器人详情",
+        "请求",
+        "基础信息",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "获取机器人频道列表",
+      "path": "api-v2/autogen/api/users_me_guilds.get.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/users_me_guilds.get.html",
+      "last_updated": "9/16/2026, 8:01:05 PM",
+      "headings": [
+        "获取机器人频道列表",
+        "请求",
+        "基础信息",
+        "查询参数",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "生成分享链接",
+      "path": "api-v2/autogen/api/v2_generate_url_link.post.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_generate_url_link.post.html",
+      "last_updated": "9/16/2026, 8:01:05 PM",
+      "headings": [
+        "生成分享链接",
+        "请求",
+        "基础信息",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "群聊分片上传完成",
+      "path": "api-v2/autogen/api/v2_groups_group_id_upload_part_finish.post.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_id_upload_part_finish.post.html",
+      "last_updated": "7/22/2026, 6:23:09 PM",
+      "headings": [
+        "群聊分片上传完成",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "群聊富媒体预上传",
+      "path": "api-v2/autogen/api/v2_groups_group_id_upload_prepare.post.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_id_upload_prepare.post.html",
+      "last_updated": "8/10/2026, 12:16:46 PM",
+      "headings": [
+        "群聊富媒体预上传",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "入群申请审批",
+      "path": "api-v2/autogen/api/v2_groups_group_openid_approval_join_request_member_openid.post.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_approval_join_request_member_openid.post.html",
+      "last_updated": "8/11/2026, 12:53:33 PM",
+      "headings": [
+        "入群申请审批",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "群成员批量移除",
+      "path": "api-v2/autogen/api/v2_groups_group_openid_batch_remove_members.post.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_batch_remove_members.post.html",
+      "last_updated": "9/3/2026, 5:58:28 PM",
+      "headings": [
+        "群成员批量移除",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "获取机器人群内状态",
+      "path": "api-v2/autogen/api/v2_groups_group_openid_bot_state.get.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_bot_state.get.html",
+      "last_updated": "8/10/2026, 12:16:46 PM",
+      "headings": [
+        "获取机器人群内状态",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "群聊富媒体上传",
+      "path": "api-v2/autogen/api/v2_groups_group_openid_files.post.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_files.post.html",
+      "last_updated": "10/9/2026, 6:37:20 PM",
+      "headings": [
+        "群聊富媒体上传",
+        "一、支持的上传方式",
+        "二、推荐流程：分片上传",
+        "三、注意事项",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "获取群基本信息",
+      "path": "api-v2/autogen/api/v2_groups_group_openid_info.get.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_info.get.html",
+      "last_updated": "8/10/2026, 12:16:46 PM",
+      "headings": [
+        "获取群基本信息",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "入群申请列表拉取",
+      "path": "api-v2/autogen/api/v2_groups_group_openid_join_request_list.get.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_join_request_list.get.html",
+      "last_updated": "9/3/2026, 5:58:32 PM",
+      "headings": [
+        "入群申请列表拉取",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "群黑名单查询",
+      "path": "api-v2/autogen/api/v2_groups_group_openid_member_blacklist.get.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_member_blacklist.get.html",
+      "last_updated": "9/3/2026, 5:58:29 PM",
+      "headings": [
+        "群黑名单查询",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "群黑名单操作",
+      "path": "api-v2/autogen/api/v2_groups_group_openid_member_blacklist.post.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_member_blacklist.post.html",
+      "last_updated": "9/3/2026, 5:58:30 PM",
+      "headings": [
+        "群黑名单操作",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "获取群成员列表",
+      "path": "api-v2/autogen/api/v2_groups_group_openid_members.get.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_members.get.html",
+      "last_updated": "9/3/2026, 5:57:51 PM",
+      "headings": [
+        "获取群成员列表",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "获取群成员信息",
+      "path": "api-v2/autogen/api/v2_groups_group_openid_members_member_openid.get.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_members_member_openid.get.html",
+      "last_updated": "9/3/2026, 5:58:30 PM",
+      "headings": [
+        "获取群成员信息",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "发送群聊消息",
+      "path": "api-v2/autogen/api/v2_groups_group_openid_messages.post.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_messages.post.html",
+      "last_updated": "9/3/2026, 5:58:33 PM",
+      "headings": [
+        "发送群聊消息",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "撤回群聊消息",
+      "path": "api-v2/autogen/api/v2_groups_group_openid_messages_message_id.delete.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_messages_message_id.delete.html",
+      "last_updated": "8/12/2026, 8:40:14 PM",
+      "headings": [
+        "撤回群聊消息",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求示例",
+        "响应",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "查询群禁言状态",
+      "path": "api-v2/autogen/api/v2_groups_group_openid_restrict_chat_setting.get.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_restrict_chat_setting.get.html",
+      "last_updated": "8/10/2026, 7:29:39 PM",
+      "headings": [
+        "查询群禁言状态",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "设置群成员禁言",
+      "path": "api-v2/autogen/api/v2_groups_group_openid_restrict_chat_setting.post.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_group_openid_restrict_chat_setting.post.html",
+      "last_updated": "9/3/2026, 5:58:33 PM",
+      "headings": [
+        "设置群成员禁言",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "查询入群自动审批策略列表",
+      "path": "api-v2/autogen/api/v2_groups_join_approval_strategy.get.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_join_approval_strategy.get.html",
+      "last_updated": "9/3/2026, 5:58:34 PM",
+      "headings": [
+        "查询入群自动审批策略列表",
+        "请求",
+        "基础信息",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "创建入群自动审批策略",
+      "path": "api-v2/autogen/api/v2_groups_join_approval_strategy.post.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_join_approval_strategy.post.html",
+      "last_updated": "8/10/2026, 7:29:39 PM",
+      "headings": [
+        "创建入群自动审批策略",
+        "请求",
+        "基础信息",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "删除入群自动审批策略",
+      "path": "api-v2/autogen/api/v2_groups_join_approval_strategy_strategy_id.delete.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_join_approval_strategy_strategy_id.delete.html",
+      "last_updated": "8/3/2026, 2:40:34 PM",
+      "headings": [
+        "删除入群自动审批策略",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求示例",
+        "响应",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "修改入群自动审批策略",
+      "path": "api-v2/autogen/api/v2_groups_join_approval_strategy_strategy_id.patch.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_join_approval_strategy_strategy_id.patch.html",
+      "last_updated": "8/3/2026, 2:40:34 PM",
+      "headings": [
+        "修改入群自动审批策略",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "执行入群自动审批策略",
+      "path": "api-v2/autogen/api/v2_groups_join_approval_strategy_strategy_id_execute.post.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_join_approval_strategy_strategy_id_execute.post.html",
+      "last_updated": "8/3/2026, 2:40:34 PM",
+      "headings": [
+        "执行入群自动审批策略",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求示例",
+        "响应",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "修改入群自动审批策略的白名单号码",
+      "path": "api-v2/autogen/api/v2_groups_join_approval_strategy_strategy_id_whitelist_users.post.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_groups_join_approval_strategy_strategy_id_whitelist_users.post.html",
+      "last_updated": "8/10/2026, 12:16:46 PM",
+      "headings": [
+        "修改入群自动审批策略的白名单号码",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "查询全局自定义菜单",
+      "path": "api-v2/autogen/api/v2_menu.get.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_menu.get.html",
+      "last_updated": "10/9/2026, 6:46:49 PM",
+      "headings": [
+        "查询全局自定义菜单",
+        "请求",
+        "基础信息",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例"
+      ]
+    },
+    {
+      "title": "修改全局自定义菜单",
+      "path": "api-v2/autogen/api/v2_menu.put.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_menu.put.html",
+      "last_updated": "10/9/2026, 6:46:49 PM",
+      "headings": [
+        "修改全局自定义菜单",
+        "请求",
+        "基础信息",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "查询指令面板列表",
+      "path": "api-v2/autogen/api/v2_panels.get.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_panels.get.html",
+      "last_updated": "8/13/2026, 1:20:14 PM",
+      "headings": [
+        "查询指令面板列表",
+        "请求",
+        "基础信息",
+        "查询参数",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "创建指令面板",
+      "path": "api-v2/autogen/api/v2_panels.post.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_panels.post.html",
+      "last_updated": "8/13/2026, 1:20:14 PM",
+      "headings": [
+        "创建指令面板",
+        "请求",
+        "基础信息",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "删除指令面板",
+      "path": "api-v2/autogen/api/v2_panels_panel_id.delete.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_panels_panel_id.delete.html",
+      "last_updated": "8/13/2026, 1:20:14 PM",
+      "headings": [
+        "删除指令面板",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求示例",
+        "响应",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "查询指令面板详情",
+      "path": "api-v2/autogen/api/v2_panels_panel_id.get.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_panels_panel_id.get.html",
+      "last_updated": "8/13/2026, 1:20:14 PM",
+      "headings": [
+        "查询指令面板详情",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "修改指令面板",
+      "path": "api-v2/autogen/api/v2_panels_panel_id.put.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_panels_panel_id.put.html",
+      "last_updated": "8/13/2026, 1:20:14 PM",
+      "headings": [
+        "修改指令面板",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "修改指令面板关联对象",
+      "path": "api-v2/autogen/api/v2_panels_panel_id_target.put.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_panels_panel_id_target.put.html",
+      "last_updated": "8/13/2026, 1:20:14 PM",
+      "headings": [
+        "修改指令面板关联对象",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "单聊分片上传完成",
+      "path": "api-v2/autogen/api/v2_users_user_id_upload_part_finish.post.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_users_user_id_upload_part_finish.post.html",
+      "last_updated": "7/22/2026, 6:23:09 PM",
+      "headings": [
+        "单聊分片上传完成",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "单聊富媒体预上传",
+      "path": "api-v2/autogen/api/v2_users_user_id_upload_prepare.post.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_users_user_id_upload_prepare.post.html",
+      "last_updated": "8/10/2026, 12:16:46 PM",
+      "headings": [
+        "单聊富媒体预上传",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "单聊富媒体上传",
+      "path": "api-v2/autogen/api/v2_users_user_openid_files.post.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_users_user_openid_files.post.html",
+      "last_updated": "10/9/2026, 6:37:20 PM",
+      "headings": [
+        "单聊富媒体上传",
+        "一、支持的上传方式",
+        "二、推荐流程：分片上传",
+        "三、注意事项",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "发送单聊消息",
+      "path": "api-v2/autogen/api/v2_users_user_openid_messages.post.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_users_user_openid_messages.post.html",
+      "last_updated": "9/3/2026, 5:58:35 PM",
+      "headings": [
+        "发送单聊消息",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "撤回单聊消息",
+      "path": "api-v2/autogen/api/v2_users_user_openid_messages_message_id.delete.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_users_user_openid_messages_message_id.delete.html",
+      "last_updated": "7/22/2026, 6:23:09 PM",
+      "headings": [
+        "撤回单聊消息",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求示例",
+        "响应",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "流式发送单聊消息",
+      "path": "api-v2/autogen/api/v2_users_user_openid_stream_messages.post.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/api/v2_users_user_openid_stream_messages.post.html",
+      "last_updated": "7/22/2026, 6:23:09 PM",
+      "headings": [
+        "流式发送单聊消息",
+        "请求",
+        "基础信息",
+        "路径参数",
+        "请求体",
+        "请求示例",
+        "响应",
+        "响应体",
+        "响应示例",
+        "错误码"
+      ]
+    },
+    {
+      "title": "单聊消息事件",
+      "path": "api-v2/autogen/event/c2c_message_create.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/c2c_message_create.html",
+      "last_updated": "9/16/2026, 8:01:05 PM",
+      "headings": [
+        "单聊消息事件",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "单聊消息接收开启",
+      "path": "api-v2/autogen/event/c2c_msg_receive.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/c2c_msg_receive.html",
+      "last_updated": "7/21/2026, 4:27:59 PM",
+      "headings": [
+        "单聊消息接收开启",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "单聊消息接收关闭",
+      "path": "api-v2/autogen/event/c2c_msg_reject.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/c2c_msg_reject.html",
+      "last_updated": "7/21/2026, 4:27:59 PM",
+      "headings": [
+        "单聊消息接收关闭",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "子频道创建",
+      "path": "api-v2/autogen/event/channel_create.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/channel_create.html",
+      "last_updated": "7/21/2026, 3:25:45 AM",
+      "headings": [
+        "子频道创建",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "子频道删除",
+      "path": "api-v2/autogen/event/channel_delete.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/channel_delete.html",
+      "last_updated": "7/21/2026, 3:25:45 AM",
+      "headings": [
+        "子频道删除",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "子频道更新",
+      "path": "api-v2/autogen/event/channel_update.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/channel_update.html",
+      "last_updated": "7/21/2026, 3:25:45 AM",
+      "headings": [
+        "子频道更新",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "用户添加好友",
+      "path": "api-v2/autogen/event/friend_add.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/friend_add.html",
+      "last_updated": "8/13/2026, 12:37:16 PM",
+      "headings": [
+        "用户添加好友",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "用户删除好友",
+      "path": "api-v2/autogen/event/friend_del.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/friend_del.html",
+      "last_updated": "7/21/2026, 4:27:59 PM",
+      "headings": [
+        "用户删除好友",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "机器人加入群聊",
+      "path": "api-v2/autogen/event/group_add_robot.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/group_add_robot.html",
+      "last_updated": "7/21/2026, 3:25:45 AM",
+      "headings": [
+        "机器人加入群聊",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "群@机器人消息",
+      "path": "api-v2/autogen/event/group_at_message_create.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/group_at_message_create.html",
+      "last_updated": "9/16/2026, 8:01:05 PM",
+      "headings": [
+        "群@机器人消息",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "机器人退出群聊",
+      "path": "api-v2/autogen/event/group_del_robot.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/group_del_robot.html",
+      "last_updated": "7/21/2026, 3:25:45 AM",
+      "headings": [
+        "机器人退出群聊",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "用户申请加群事件",
+      "path": "api-v2/autogen/event/group_join_request.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/group_join_request.html",
+      "last_updated": "9/3/2026, 5:58:35 PM",
+      "headings": [
+        "用户申请加群事件",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "群成员加入",
+      "path": "api-v2/autogen/event/group_member_add.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/group_member_add.html",
+      "last_updated": "10/9/2026, 6:37:20 PM",
+      "headings": [
+        "群成员加入",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "群成员退出",
+      "path": "api-v2/autogen/event/group_member_remove.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/group_member_remove.html",
+      "last_updated": "8/11/2026, 12:53:33 PM",
+      "headings": [
+        "群成员退出",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "群消息（全量模式）",
+      "path": "api-v2/autogen/event/group_message_create.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/group_message_create.html",
+      "last_updated": "10/21/2026, 6:27:26 PM",
+      "headings": [
+        "群消息（全量模式）",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "群聊消息接收开启",
+      "path": "api-v2/autogen/event/group_msg_receive.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/group_msg_receive.html",
+      "last_updated": "7/21/2026, 4:27:59 PM",
+      "headings": [
+        "群聊消息接收开启",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "群聊消息接收关闭",
+      "path": "api-v2/autogen/event/group_msg_reject.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/group_msg_reject.html",
+      "last_updated": "7/21/2026, 4:27:59 PM",
+      "headings": [
+        "群聊消息接收关闭",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "频道创建",
+      "path": "api-v2/autogen/event/guild_create.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/guild_create.html",
+      "last_updated": "7/21/2026, 3:25:45 AM",
+      "headings": [
+        "频道创建",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "频道解散",
+      "path": "api-v2/autogen/event/guild_delete.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/guild_delete.html",
+      "last_updated": "7/21/2026, 3:25:45 AM",
+      "headings": [
+        "频道解散",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "频道更新",
+      "path": "api-v2/autogen/event/guild_update.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/guild_update.html",
+      "last_updated": "7/21/2026, 3:25:45 AM",
+      "headings": [
+        "频道更新",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "互动事件",
+      "path": "api-v2/autogen/event/interaction_create.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/interaction_create.html",
+      "last_updated": "7/23/2026, 4:23:02 PM",
+      "headings": [
+        "互动事件",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "订阅消息授权状态变更",
+      "path": "api-v2/autogen/event/subscribe_message_status.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/event/subscribe_message_status.html",
+      "last_updated": "7/21/2026, 4:27:59 PM",
+      "headings": [
+        "订阅消息授权状态变更",
+        "事件",
+        "事件体",
+        "事件示例"
+      ]
+    },
+    {
+      "title": "接口文档索引",
+      "path": "api-v2/autogen/index.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/autogen/index.html",
+      "last_updated": "10/21/2026, 6:27:26 PM",
+      "headings": [
+        "接口文档索引",
+        "接口",
+        "消息/单聊消息",
+        "消息/群消息",
+        "消息/富媒体",
+        "互动/自定义菜单",
+        "互动/指令面板",
+        "互动/互动回调",
+        "QQ频道/频道管理",
+        "用户/机器人",
+        "用户/网关",
+        "用户/机器人管理",
+        "QQ群/群信息",
+        "QQ群/群成员",
+        "QQ群/入群申请",
+        "QQ群/群黑名单",
+        "QQ群/群禁言",
+        "事件",
+        "通用/互动",
+        "通用/订阅消息",
+        "好友/好友关系",
+        "消息/单聊消息",
+        "好友/消息接收开关",
+        "QQ群/机器人",
+        "QQ群/消息接收开关",
+        "消息/群聊消息",
+        "QQ群/群成员",
+        "QQ频道/频道管理"
+      ]
+    },
+    {
+      "title": "变更记录",
+      "path": "api-v2/changelog.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/changelog.html",
+      "last_updated": "10/21/2026, 7:35:14 PM",
+      "headings": [
+        "变更记录",
+        "20261021",
+        "新增",
+        "20260916",
+        "优化",
+        "20260903",
+        "新增",
+        "优化",
+        "20260812",
+        "新增",
+        "20260810",
+        "优化",
+        "新增"
+      ]
+    },
+    {
+      "title": "获取访问凭证",
+      "path": "api-v2/dev-prepare/access-token.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/access-token.html",
+      "last_updated": "9/16/2026, 8:01:05 PM",
+      "headings": [
+        "获取访问凭证",
+        "获取 access_token",
+        "请求",
+        "请求参数",
+        "返回参数",
+        "错误码",
+        "调用示例",
+        "返回示例",
+        "凭证有效期与刷新",
+        "使用访问凭证"
+      ]
+    },
+    {
+      "title": "API 调用指南",
+      "path": "api-v2/dev-prepare/api-call-guide.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/api-call-guide.html",
+      "last_updated": "9/17/2026, 11:37:24 AM",
+      "headings": [
+        "API 调用指南",
+        "调用方式",
+        "统一请求地址",
+        "鉴权方式",
+        "请求示例",
+        "响应结构",
+        "唯一身份机制",
+        "全链路追踪",
+        "OpenAPI 错误码",
+        "HTTP 状态码",
+        "公共错误码"
+      ]
+    },
+    {
+      "title": "错误与调试",
+      "path": "api-v2/dev-prepare/error-trace/index.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/error-trace/index.html",
+      "last_updated": "12/20/2023, 4:46:30 PM",
+      "headings": [
+        "错误与调试",
+        "错误码",
+        "有关 traceID"
+      ]
+    },
+    {
+      "title": "WebSocket",
+      "path": "api-v2/dev-prepare/error-trace/websocket.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/error-trace/websocket.html",
+      "last_updated": "7/21/2026, 9:50:42 PM",
+      "headings": [
+        "WebSocket",
+        "错误码 code",
+        "针对 WebSocket 错误码的简单处理逻辑"
+      ]
+    },
+    {
+      "title": "通用数据结构",
+      "path": "api-v2/dev-prepare/event-emit/payload.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/event-emit/payload.html",
+      "last_updated": "7/21/2026, 9:50:42 PM",
+      "headings": [
+        "通用数据结构",
+        "OpCode 含义",
+        "事件订阅 Intents",
+        "举例",
+        "权限"
+      ]
+    },
+    {
+      "title": "Webhook 方式",
+      "path": "api-v2/dev-prepare/event-emit/webhook.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/event-emit/webhook.html",
+      "last_updated": "9/11/2026, 7:11:03 PM",
+      "headings": [
+        "Webhook 方式",
+        "签名校验",
+        "回调地址及事件监听配置"
+      ]
+    },
+    {
+      "title": "WebSocket 方式",
+      "path": "api-v2/dev-prepare/event-emit/websocket.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/event-emit/websocket.html",
+      "last_updated": "7/30/2026, 10:21:27 PM",
+      "headings": [
+        "WebSocket 方式",
+        "发起连接到 Gateway",
+        "登录鉴权获得 Session",
+        "发送心跳 Ack",
+        "恢复登录态 Session",
+        "分片连接 LoadBalance",
+        "获得合适的分片数",
+        "分片规则",
+        "最大连接数",
+        "WebSocket 错误码"
+      ]
+    },
+    {
+      "title": "启动接入",
+      "path": "api-v2/dev-prepare/getting-started.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/getting-started.html",
+      "last_updated": "7/21/2026, 10:16:06 PM",
+      "headings": [
+        "启动接入",
+        "账号注册",
+        "接入票据",
+        "SDK DEMO"
+      ]
+    },
+    {
+      "title": "接口调用与鉴权",
+      "path": "api-v2/dev-prepare/interface-framework/api-use.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/api-use.html",
+      "last_updated": "7/30/2026, 10:21:27 PM",
+      "headings": [
+        "接口调用与鉴权",
+        "获取调用凭证",
+        "鉴权方式"
+      ]
+    },
+    {
+      "title": "事件订阅与通知",
+      "path": "api-v2/dev-prepare/interface-framework/event-emit.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/event-emit.html",
+      "last_updated": "9/11/2026, 6:09:37 PM",
+      "headings": [
+        "事件订阅与通知",
+        "通用数据结构 Payload",
+        "OpCode 含义",
+        "Webhook方式",
+        "签名校验",
+        "回调地址及事件监听配置",
+        "WebSocket方式",
+        "发起连接到 Gateway",
+        "登录鉴权获得 Session",
+        "发送心跳 Ack",
+        "恢复登录态 Session",
+        "事件订阅Intents",
+        "分片连接LoadBalance"
+      ]
+    },
+    {
+      "title": "接口通信基础框架",
+      "path": "api-v2/dev-prepare/interface-framework/index.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/index.html",
+      "last_updated": "5/20/2026, 8:38:10 PM",
+      "headings": [
+        "接口通信基础框架"
+      ]
+    },
+    {
+      "title": "opcode",
+      "path": "api-v2/dev-prepare/interface-framework/opcode.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/opcode.html",
+      "last_updated": "9/12/2024, 9:12:52 PM",
+      "headings": [
+        "opcode"
+      ]
+    },
+    {
+      "title": "使用 Websocket 接入",
+      "path": "api-v2/dev-prepare/interface-framework/reference.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/reference.html",
+      "last_updated": "7/30/2026, 10:21:27 PM",
+      "headings": [
+        "使用 Websocket 接入",
+        "payload",
+        "1.连接到 Gateway",
+        "2.鉴权连接",
+        "3.发送心跳",
+        "4.恢复连接"
+      ]
+    },
+    {
+      "title": "安全和授权",
+      "path": "api-v2/dev-prepare/interface-framework/sign.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/dev-prepare/interface-framework/sign.html",
+      "last_updated": "9/12/2024, 9:12:52 PM",
+      "headings": [
+        "安全和授权",
+        "安全凭证",
+        "验证签名",
+        "1. 签名验证参数",
+        "2. 验证签名过程"
+      ]
+    },
+    {
+      "title": "业务报错返回的数据信息(Data)",
+      "path": "api-v2/gateway/error/data/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/gateway/error/data/model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "业务报错返回的数据信息(Data)",
+        "Data"
+      ]
+    },
+    {
+      "title": "websocket 错误",
+      "path": "api-v2/gateway/error/error.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/gateway/error/error.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "websocket 错误",
+        "code",
+        "针对 websocket 错误码的简单处理逻辑"
+      ]
+    },
+    {
+      "title": "启动接入",
+      "path": "api-v2/gateway/message/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/gateway/message/model.html",
+      "last_updated": "7/21/2026, 10:16:06 PM",
+      "headings": [
+        "启动接入",
+        "账号注册",
+        "接入票据",
+        "SDK DEMO"
+      ]
+    },
+    {
+      "title": "启动接入",
+      "path": "api-v2/index.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/index.html",
+      "last_updated": "7/21/2026, 10:16:06 PM",
+      "headings": [
+        "启动接入",
+        "账号注册",
+        "接入票据",
+        "SDK DEMO"
+      ]
+    },
+    {
+      "title": "表情对象",
+      "path": "api-v2/openapi/emoji/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/openapi/emoji/model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "表情对象",
+        "Emoji",
+        "EmojiType",
+        "Emoji列表"
+      ]
+    },
+    {
+      "title": "业务报错返回的数据信息(Data)",
+      "path": "api-v2/openapi/error/data/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/openapi/error/data/model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "业务报错返回的数据信息(Data)",
+        "Data"
+      ]
+    },
+    {
+      "title": "错误与调试",
+      "path": "api-v2/openapi/error/error.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/openapi/error/error.html",
+      "last_updated": "7/21/2026, 9:50:42 PM",
+      "headings": [
+        "错误与调试",
+        "OpenAPI错误码",
+        "HTTP 状态码",
+        "公共错误码",
+        "全链路追踪",
+        "WebSocket 错误码"
+      ]
+    },
+    {
+      "title": "启动接入",
+      "path": "api-v2/openapi/guild/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/openapi/guild/model.html",
+      "last_updated": "7/21/2026, 10:16:06 PM",
+      "headings": [
+        "启动接入",
+        "账号注册",
+        "接入票据",
+        "SDK DEMO"
+      ]
+    },
+    {
+      "title": "启动接入",
+      "path": "api-v2/openapi/guild/role_model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/openapi/guild/role_model.html",
+      "last_updated": "7/21/2026, 10:16:06 PM",
+      "headings": [
+        "启动接入",
+        "账号注册",
+        "接入票据",
+        "SDK DEMO"
+      ]
+    },
+    {
+      "title": "删除频道成员",
+      "path": "api-v2/openapi/member/delete_member.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/openapi/member/delete_member.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "删除频道成员",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "获取成员详情",
+      "path": "api-v2/openapi/member/get_member.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/openapi/member/get_member.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "获取成员详情",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "获取频道成员列表",
+      "path": "api-v2/openapi/member/get_members.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/openapi/member/get_members.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "获取频道成员列表",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "有关返回结果的说明",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "成员对象(Member)",
+      "path": "api-v2/openapi/member/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/openapi/member/model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "成员对象(Member)",
+        "Member",
+        "MemberWithGuildID"
+      ]
+    },
+    {
+      "title": "表情表态对象",
+      "path": "api-v2/openapi/reaction/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/openapi/reaction/model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "表情表态对象",
+        "MessageReaction",
+        "ReactionTarget",
+        "ReactionTargetType"
+      ]
+    },
+    {
+      "title": "获取用户频道列表",
+      "path": "api-v2/openapi/user/guilds.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/openapi/user/guilds.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "获取用户频道列表",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "获取用户详情",
+      "path": "api-v2/openapi/user/me.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/openapi/user/me.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "获取用户详情",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "用户对象(User)",
+      "path": "api-v2/openapi/user/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/openapi/user/model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "用户对象(User)",
+        "User",
+        "提示"
+      ]
+    },
+    {
+      "title": "获取带分片 WSS 接入点",
+      "path": "api-v2/openapi/wss/shard_url_get.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/openapi/wss/shard_url_get.html",
+      "last_updated": "7/30/2026, 10:21:27 PM",
+      "headings": [
+        "获取带分片 WSS 接入点",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "SessionStartLimit",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "获取通用 WSS 接入点",
+      "path": "api-v2/openapi/wss/url_get.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/openapi/wss/url_get.html",
+      "last_updated": "7/30/2026, 10:21:27 PM",
+      "headings": [
+        "获取通用 WSS 接入点",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "获取机器人在频道可用权限列表",
+      "path": "api-v2/server-inter/channel/api_permissions/get_guild_api_permission.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/api_permissions/get_guild_api_permission.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "获取机器人在频道可用权限列表",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "频道模块",
+      "path": "api-v2/server-inter/channel/api_permissions/index.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/api_permissions/index.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "频道模块"
+      ]
+    },
+    {
+      "title": "接口权限对象",
+      "path": "api-v2/server-inter/channel/api_permissions/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/api_permissions/model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "接口权限对象",
+        "接口权限对象 (APIPermission)",
+        "接口权限需求对象（APIPermissionDemand）",
+        "接口权限需求标识对象（APIPermissionDemandIdentify）"
+      ]
+    },
+    {
+      "title": "发送机器人在频道接口权限的授权链接",
+      "path": "api-v2/server-inter/channel/api_permissions/post_api_permission_demand.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/api_permissions/post_api_permission_demand.html",
+      "last_updated": "5/20/2026, 8:38:10 PM",
+      "headings": [
+        "发送机器人在频道接口权限的授权链接",
+        "接口",
+        "功能描述",
+        "示例图",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "删除子频道公告（2022年3月15日后废弃）",
+      "path": "api-v2/server-inter/channel/content/announces/delete_channel_announces.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/announces/delete_channel_announces.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "删除子频道公告（2022年3月15日后废弃）",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "删除频道公告",
+      "path": "api-v2/server-inter/channel/content/announces/delete_guild_announces.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/announces/delete_guild_announces.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "删除频道公告",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "公告对象(Announces)",
+      "path": "api-v2/server-inter/channel/content/announces/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/announces/model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "公告对象(Announces)",
+        "Announces",
+        "推荐子频道对象(RecommendChannel)",
+        "RecommendChannel"
+      ]
+    },
+    {
+      "title": "创建子频道公告（2022年3月15日后废弃）",
+      "path": "api-v2/server-inter/channel/content/announces/post_channel_announces.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/announces/post_channel_announces.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "创建子频道公告（2022年3月15日后废弃）",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "创建频道公告",
+      "path": "api-v2/server-inter/channel/content/announces/post_guild_announces.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/announces/post_guild_announces.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "创建频道公告",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "音频控制",
+      "path": "api-v2/server-inter/channel/content/audio/audio_control.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/audio/audio_control.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "音频控制",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "机器人下麦",
+      "path": "api-v2/server-inter/channel/content/audio/delete_mic.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/audio/delete_mic.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "机器人下麦",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "语音对象",
+      "path": "api-v2/server-inter/channel/content/audio/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/audio/model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "语音对象",
+        "AudioControl",
+        "STATUS",
+        "AudioAction"
+      ]
+    },
+    {
+      "title": "机器人上麦",
+      "path": "api-v2/server-inter/channel/content/audio/put_mic.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/audio/put_mic.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "机器人上麦",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "删除帖子",
+      "path": "api-v2/server-inter/channel/content/forum/delete_thread.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/forum/delete_thread.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "删除帖子",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "错误码",
+        "返回"
+      ]
+    },
+    {
+      "title": "论坛事件对象(ForumEvent)",
+      "path": "api-v2/server-inter/channel/content/forum/forum.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/forum/forum.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "论坛事件对象(ForumEvent)",
+        "FORUM_EVENT（intents FORUM_EVENT）",
+        "发送时机",
+        "主题事件",
+        "示例",
+        "帖子事件",
+        "示例",
+        "回复事件",
+        "示例",
+        "帖子审核事件"
+      ]
+    },
+    {
+      "title": "获取帖子详情",
+      "path": "api-v2/server-inter/channel/content/forum/get_thread.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/forum/get_thread.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "获取帖子详情",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "获取帖子列表",
+      "path": "api-v2/server-inter/channel/content/forum/get_threads_list.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/forum/get_threads_list.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "获取帖子列表",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "论坛对象(forum)",
+      "path": "api-v2/server-inter/channel/content/forum/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/forum/model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "论坛对象(forum)",
+        "Thread",
+        "ThreadInfo",
+        "Post",
+        "PostInfo",
+        "Reply",
+        "ReplyInfo",
+        "AuditResult",
+        "AuditType",
+        "RichObject",
+        "RichText",
+        "Paragraph",
+        "Elem",
+        "TextElem",
+        "TextProps",
+        "ImageElem",
+        "PlatImage",
+        "VideoElem",
+        "PlatVideo",
+        "URLElem",
+        "ParagraphProps"
+      ]
+    },
+    {
+      "title": "开放论坛事件对象(OpenForumEvent)",
+      "path": "api-v2/server-inter/channel/content/forum/open_forum.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/forum/open_forum.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "开放论坛事件对象(OpenForumEvent)",
+        "OEPN_FORUM_EVENT（intents OPEN_FORUM_EVENT）",
+        "主题事件",
+        "示例",
+        "帖子事件",
+        "示例",
+        "回复事件",
+        "示例"
+      ]
+    },
+    {
+      "title": "发表帖子",
+      "path": "api-v2/server-inter/channel/content/forum/put_thread.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/forum/put_thread.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "发表帖子",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "Format",
+        "错误码",
+        "返回",
+        "示例"
+      ]
+    },
+    {
+      "title": "频道模块",
+      "path": "api-v2/server-inter/channel/content/index.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/index.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "频道模块"
+      ]
+    },
+    {
+      "title": "删除精华消息",
+      "path": "api-v2/server-inter/channel/content/pins/delete_pins_message.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/pins/delete_pins_message.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "删除精华消息",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "获取精华消息",
+      "path": "api-v2/server-inter/channel/content/pins/get_pins_message.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/pins/get_pins_message.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "获取精华消息",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "精华消息对象(PinsMessage)",
+      "path": "api-v2/server-inter/channel/content/pins/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/pins/model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "精华消息对象(PinsMessage)",
+        "PinsMessage"
+      ]
+    },
+    {
+      "title": "添加精华消息",
+      "path": "api-v2/server-inter/channel/content/pins/put_pins_message.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/pins/put_pins_message.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "添加精华消息",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "删除日程",
+      "path": "api-v2/server-inter/channel/content/schedule/delete_schedule.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/schedule/delete_schedule.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "删除日程",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "获取日程详情",
+      "path": "api-v2/server-inter/channel/content/schedule/get_schedule.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/schedule/get_schedule.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "获取日程详情",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "获取频道日程列表",
+      "path": "api-v2/server-inter/channel/content/schedule/get_schedules.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/schedule/get_schedules.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "获取频道日程列表",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "日程对象(Schedule)",
+      "path": "api-v2/server-inter/channel/content/schedule/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/schedule/model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "日程对象(Schedule)",
+        "Schedule",
+        "RemindType"
+      ]
+    },
+    {
+      "title": "修改日程",
+      "path": "api-v2/server-inter/channel/content/schedule/patch_schedule.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/schedule/patch_schedule.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "修改日程",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "创建日程",
+      "path": "api-v2/server-inter/channel/content/schedule/post_schedule.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/content/schedule/post_schedule.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "创建日程",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "频道模块",
+      "path": "api-v2/server-inter/channel/index.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/index.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "频道模块"
+      ]
+    },
+    {
+      "title": "子频道对象(Channel)",
+      "path": "api-v2/server-inter/channel/manage/channel/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/manage/channel/model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "子频道对象(Channel)",
+        "Channel",
+        "有关 position 的说明",
+        "ChannelType",
+        "ChannelSubType",
+        "PrivateType",
+        "SpeakPermission",
+        "应用子频道的应用类型"
+      ]
+    },
+    {
+      "title": "频道对象(Guild)",
+      "path": "api-v2/server-inter/channel/manage/guild/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/manage/guild/model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "频道对象(Guild)",
+        "Guild"
+      ]
+    },
+    {
+      "title": "频道模块",
+      "path": "api-v2/server-inter/channel/manage/index.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/manage/index.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "频道模块"
+      ]
+    },
+    {
+      "title": "用户对象(User)",
+      "path": "api-v2/server-inter/channel/manage/user/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/manage/user/model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "用户对象(User)",
+        "User",
+        "提示"
+      ]
+    },
+    {
+      "title": "频道私信",
+      "path": "api-v2/server-inter/channel/message/dms.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/message/dms.html",
+      "last_updated": "7/21/2026, 3:25:45 AM",
+      "headings": [
+        "频道私信",
+        "创建私信会话",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例",
+        "发送私信",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例",
+        "撤回私信",
+        "接口",
+        "参数",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例",
+        "DMS 对象",
+        "DMS"
+      ]
+    },
+    {
+      "title": "频道消息事件",
+      "path": "api-v2/server-inter/channel/message/event.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/message/event.html",
+      "last_updated": "7/21/2026, 3:25:45 AM",
+      "headings": [
+        "频道消息事件",
+        "AT_MESSAGE_CREATE（intents PUBLIC_GUILD_MESSAGES）",
+        "发送时机",
+        "内容",
+        "示例",
+        "MESSAGE_CREATE（intents PUBLIC_GUILD_MESSAGES，私域）",
+        "发送时机",
+        "内容",
+        "示例",
+        "DIRECT_MESSAGE_CREATE（intents DIRECT_MESSAGE）",
+        "发送时机",
+        "内容",
+        "示例",
+        "消息审核事件",
+        "MESSAGE_AUDIT_PASS（intents MESSAGE_AUDIT）",
+        "MESSAGE_AUDIT_REJECT（intents MESSAGE_AUDIT）"
+      ]
+    },
+    {
+      "title": "内嵌格式",
+      "path": "api-v2/server-inter/channel/message/format.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/message/format.html",
+      "last_updated": "7/21/2026, 3:25:45 AM",
+      "headings": [
+        "内嵌格式",
+        "功能描述",
+        "支持的格式",
+        "转义内容",
+        "示例"
+      ]
+    },
+    {
+      "title": "撤回子频道消息",
+      "path": "api-v2/server-inter/channel/message/recall.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/message/recall.html",
+      "last_updated": "7/21/2026, 3:25:45 AM",
+      "headings": [
+        "撤回子频道消息",
+        "接口",
+        "参数",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "发送子频道消息",
+      "path": "api-v2/server-inter/channel/message/send.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/message/send.html",
+      "last_updated": "7/21/2026, 3:25:45 AM",
+      "headings": [
+        "发送子频道消息",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "通用参数",
+        "multipart/form-data 专有参数",
+        "返回",
+        "错误码",
+        "JSON 格式示例",
+        "form-data 格式示例"
+      ]
+    },
+    {
+      "title": "频道模块",
+      "path": "api-v2/server-inter/channel/miniapp/index.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/miniapp/index.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "频道模块"
+      ]
+    },
+    {
+      "title": "获取频道和当前人信息",
+      "path": "api-v2/server-inter/channel/miniapp/interface.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/miniapp/interface.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "获取频道和当前人信息",
+        "从 extendData 中获取频道ID",
+        "机器人服务打开小程序",
+        "机器人发出的ark打开小程序",
+        "获取频道信息与当前人身份",
+        "调用参数 Object object",
+        "Object.success 回调函数参数 Object res",
+        "encryptedData 解密后的数据",
+        "Object channel_info 子频道信息"
+      ]
+    },
+    {
+      "title": "开放数据域加密",
+      "path": "api-v2/server-inter/channel/miniapp/opendata.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/miniapp/opendata.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "开放数据域加密",
+        "背景",
+        "开放数据加密-参考文档"
+      ]
+    },
+    {
+      "title": "获取子频道用户权限",
+      "path": "api-v2/server-inter/channel/role-group/channel_permissions/get_channel_permissions.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/channel_permissions/get_channel_permissions.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "获取子频道用户权限",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "获取子频道身份组权限",
+      "path": "api-v2/server-inter/channel/role-group/channel_permissions/get_channel_roles_permissions.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/channel_permissions/get_channel_roles_permissions.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "获取子频道身份组权限",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "子频道权限对象(ChannelPermissions)",
+      "path": "api-v2/server-inter/channel/role-group/channel_permissions/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/channel_permissions/model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "子频道权限对象(ChannelPermissions)",
+        "ChannelPermissions",
+        "Permissions"
+      ]
+    },
+    {
+      "title": "修改子频道用户权限",
+      "path": "api-v2/server-inter/channel/role-group/channel_permissions/put_channel_permissions.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/channel_permissions/put_channel_permissions.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "修改子频道用户权限",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "修改子频道身份组权限",
+      "path": "api-v2/server-inter/channel/role-group/channel_permissions/put_channel_roles_permissions.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/channel_permissions/put_channel_roles_permissions.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "修改子频道身份组权限",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "删除频道身份组成员",
+      "path": "api-v2/server-inter/channel/role-group/delete_guild_member_role.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/delete_guild_member_role.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "删除频道身份组成员",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "删除频道身份组",
+      "path": "api-v2/server-inter/channel/role-group/delete_guild_role.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/delete_guild_role.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "删除频道身份组",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "获取频道身份组列表",
+      "path": "api-v2/server-inter/channel/role-group/get_guild_roles.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/get_guild_roles.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "获取频道身份组列表",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "频道模块",
+      "path": "api-v2/server-inter/channel/role-group/index.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/index.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "频道模块"
+      ]
+    },
+    {
+      "title": "修改频道身份组",
+      "path": "api-v2/server-inter/channel/role-group/patch_guild_role.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/patch_guild_role.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "修改频道身份组",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "创建频道身份组",
+      "path": "api-v2/server-inter/channel/role-group/post_guild_role.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/post_guild_role.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "创建频道身份组",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "创建频道身份组成员",
+      "path": "api-v2/server-inter/channel/role-group/put_guild_member_role.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role-group/put_guild_member_role.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "创建频道身份组成员",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "音视频/直播子频道成员进出事件",
+      "path": "api-v2/server-inter/channel/role/audio_or_live_channel_member.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role/audio_or_live_channel_member.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "音视频/直播子频道成员进出事件",
+        "AUDIO_OR_LIVE_CHANNEL_MEMBER_ENTER",
+        "发送时机",
+        "示例",
+        "AUDIO_OR_LIVE_CHANNEL_MEMBER_EXIT",
+        "发送时机",
+        "示例"
+      ]
+    },
+    {
+      "title": "获取子频道在线成员数",
+      "path": "api-v2/server-inter/channel/role/get_online_nums.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role/get_online_nums.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "获取子频道在线成员数",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "频道成员事件",
+      "path": "api-v2/server-inter/channel/role/guild_member.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role/guild_member.html",
+      "last_updated": "7/22/2024, 10:40:23 AM",
+      "headings": [
+        "频道成员事件",
+        "内容",
+        "GUILD_MEMBER_ADD",
+        "发送时机",
+        "示例",
+        "GUILD_MEMBER_UPDATE",
+        "发送时机",
+        "示例",
+        "GUILD_MEMBER_REMOVE",
+        "发送时机",
+        "示例"
+      ]
+    },
+    {
+      "title": "频道模块",
+      "path": "api-v2/server-inter/channel/role/index.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role/index.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "频道模块"
+      ]
+    },
+    {
+      "title": "删除频道成员",
+      "path": "api-v2/server-inter/channel/role/member/delete_member.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role/member/delete_member.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "删除频道成员",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "获取频道成员详情",
+      "path": "api-v2/server-inter/channel/role/member/get_member.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role/member/get_member.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "获取频道成员详情",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "获取频道成员列表",
+      "path": "api-v2/server-inter/channel/role/member/get_members.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role/member/get_members.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "获取频道成员列表",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "有关返回结果的说明",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "获取频道身份组成员列表",
+      "path": "api-v2/server-inter/channel/role/member/get_role_members.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role/member/get_role_members.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "获取频道身份组成员列表",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "返回",
+        "有关返回结果的说明",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "成员对象(Member)",
+      "path": "api-v2/server-inter/channel/role/member/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role/member/model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "成员对象(Member)",
+        "Member",
+        "MemberWithGuildID"
+      ]
+    },
+    {
+      "title": "频道身份组对象(Role)",
+      "path": "api-v2/server-inter/channel/role/member/role_model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/role/member/role_model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "频道身份组对象(Role)",
+        "Role",
+        "DefaultRoleIDs(系统默认生成下列身份组ID)"
+      ]
+    },
+    {
+      "title": "频道模块",
+      "path": "api-v2/server-inter/channel/speak/index.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/speak/index.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "频道模块"
+      ]
+    },
+    {
+      "title": "频道指定成员禁言",
+      "path": "api-v2/server-inter/channel/speak/patch_guild_member_mute.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/speak/patch_guild_member_mute.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "频道指定成员禁言",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "解除禁言",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "频道全员禁言",
+      "path": "api-v2/server-inter/channel/speak/patch_guild_mute.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/speak/patch_guild_mute.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "频道全员禁言",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "解除禁言",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "频道批量成员禁言",
+      "path": "api-v2/server-inter/channel/speak/patch_guild_mute_multi_member.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/speak/patch_guild_mute_multi_member.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "频道批量成员禁言",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "参数",
+        "批量解除禁言",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "获取频道消息频率的设置详情",
+      "path": "api-v2/server-inter/channel/speak/setting/message_setting.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/speak/setting/message_setting.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "获取频道消息频率的设置详情",
+        "接口",
+        "功能描述",
+        "Content-Type",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "频道消息频率设置对象 (MessageSetting)",
+      "path": "api-v2/server-inter/channel/speak/setting/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/channel/speak/setting/model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "频道消息频率设置对象 (MessageSetting)",
+        "MessageSetting"
+      ]
+    },
+    {
+      "title": "群组模块",
+      "path": "api-v2/server-inter/group/index.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/group/index.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "群组模块"
+      ]
+    },
+    {
+      "title": "群管理",
+      "path": "api-v2/server-inter/group/manage/index.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/group/manage/index.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "群管理"
+      ]
+    },
+    {
+      "title": "自定义菜单与指令面板",
+      "path": "api-v2/server-inter/menu-panel/index.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/menu-panel/index.html",
+      "last_updated": "8/13/2026, 12:04:31 PM",
+      "headings": [
+        "自定义菜单与指令面板",
+        "自定义菜单",
+        "指令面板"
+      ]
+    },
+    {
+      "title": "消息相关",
+      "path": "api-v2/server-inter/message/index.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/index.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "消息相关"
+      ]
+    },
+    {
+      "title": "素材管理",
+      "path": "api-v2/server-inter/message/material-management.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/material-management.html",
+      "last_updated": "10/21/2026, 7:35:14 PM",
+      "headings": [
+        "素材管理",
+        "使用流程",
+        "限制说明",
+        "申请图片上传",
+        "请求参数",
+        "返回参数",
+        "示例",
+        "完成图片上传",
+        "请求参数",
+        "返回参数",
+        "示例",
+        "查询有效图片",
+        "返回参数",
+        "示例",
+        "删除图片",
+        "示例",
+        "错误码",
+        "注意事项"
+      ]
+    },
+    {
+      "title": "消息收发概述",
+      "path": "api-v2/server-inter/message/overview.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/overview.html",
+      "last_updated": "7/21/2026, 11:01:44 PM",
+      "headings": [
+        "消息收发概述",
+        "收发场景",
+        "对话场景图示",
+        "主动消息与被动消息",
+        "消息类型",
+        "富媒体消息",
+        "频率与时效规则",
+        "被动消息",
+        "主动消息",
+        "消息去重",
+        "撤回消息"
+      ]
+    },
+    {
+      "title": "富媒体消息概述",
+      "path": "api-v2/server-inter/message/rich-media.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/rich-media.html",
+      "last_updated": "7/21/2026, 9:50:42 PM",
+      "headings": [
+        "富媒体消息概述",
+        "支持的消息类型",
+        "文件类型与限制",
+        "上传方式",
+        "分片上传（推荐）",
+        "URL 上传",
+        "使用 file_info 发送",
+        "单聊与群聊隔离",
+        "注意事项"
+      ]
+    },
+    {
+      "title": "消息对象(Message)",
+      "path": "api-v2/server-inter/message/template/model.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/template/model.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "消息对象(Message)",
+        "Message",
+        "MessageEmbed",
+        "MessageEmbedThumbnail",
+        "MessageEmbedField",
+        "MessageAttachment",
+        "MessageArk",
+        "MessageArkKv",
+        "MessageArkObj",
+        "MessageArkObjKv",
+        "MessageReference",
+        "MessageMarkdown",
+        "MessageMarkdownParams",
+        "MessageDelete",
+        "消息审核对象(MessageAudited)",
+        "MessageAudited"
+      ]
+    },
+    {
+      "title": "表情表态",
+      "path": "api-v2/server-inter/message/trans/emoji.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/trans/emoji.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "表情表态",
+        "机器人发表表情表态",
+        "接口",
+        "功能描述",
+        "参数",
+        "返回",
+        "错误码",
+        "示例",
+        "删除机器人发表的表情表态",
+        "接口",
+        "功能描述",
+        "参数",
+        "返回",
+        "错误码",
+        "示例",
+        "获取消息表情表态的用户列表",
+        "接口",
+        "功能描述",
+        "Path 参数",
+        "Query 参数",
+        "返回",
+        "错误码",
+        "示例",
+        "事件",
+        "用户发表"
+      ]
+    },
+    {
+      "title": "消息按钮",
+      "path": "api-v2/server-inter/message/trans/msg-btn.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/trans/msg-btn.html",
+      "last_updated": "7/21/2026, 3:25:45 AM",
+      "headings": [
+        "消息按钮",
+        "发送方式",
+        "数据结构与协议",
+        "相关事件与接口"
+      ]
+    },
+    {
+      "title": "消息交互概述",
+      "path": "api-v2/server-inter/message/trans/overview.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/trans/overview.html",
+      "last_updated": "7/21/2026, 9:50:42 PM",
+      "headings": [
+        "消息交互概述",
+        "消息按钮互动流程",
+        "发送消息时携带 keyboard",
+        "响应互动"
+      ]
+    },
+    {
+      "title": "文本交互",
+      "path": "api-v2/server-inter/message/trans/text-chain.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/trans/text-chain.html",
+      "last_updated": "6/7/2024, 3:21:22 PM",
+      "headings": [
+        "文本交互",
+        "使用 @ 能力",
+        "指令操作",
+        "跳转子频道",
+        "表情"
+      ]
+    },
+    {
+      "title": "结构化卡片消息",
+      "path": "api-v2/server-inter/message/type/ark.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/type/ark.html",
+      "last_updated": "7/22/2026, 8:51:48 PM",
+      "headings": [
+        "结构化卡片消息",
+        "发送方式",
+        "数据结构",
+        "请求示例",
+        "模板 23 — 链接+文本列表",
+        "模板格式",
+        "字段说明",
+        "请求示例",
+        "模板 24 — 文本+缩略图",
+        "模板格式",
+        "字段说明",
+        "请求示例",
+        "模板 37 — 大图",
+        "模板格式",
+        "字段说明",
+        "请求示例"
+      ]
+    },
+    {
+      "title": "Embed 消息",
+      "path": "api-v2/server-inter/message/type/embed.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/type/embed.html",
+      "last_updated": "5/20/2026, 8:38:10 PM",
+      "headings": [
+        "Embed 消息",
+        "样式",
+        "数据结构与协议",
+        "Content-Type",
+        "参数",
+        "返回",
+        "错误码",
+        "示例"
+      ]
+    },
+    {
+      "title": "Markdown 消息",
+      "path": "api-v2/server-inter/message/type/markdown.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/type/markdown.html",
+      "last_updated": "10/21/2026, 7:35:14 PM",
+      "headings": [
+        "Markdown 消息",
+        "支持格式",
+        "标题",
+        "文字样式",
+        "链接",
+        "图片",
+        "有序列表",
+        "无序列表",
+        "列表嵌套",
+        "块引用",
+        "水平分割线",
+        "换多行",
+        "发送方式",
+        "数据结构与协议"
+      ]
+    },
+    {
+      "title": "消息类型",
+      "path": "api-v2/server-inter/message/type/overview.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/message/type/overview.html",
+      "last_updated": "7/23/2026, 4:32:35 PM",
+      "headings": [
+        "消息类型",
+        "发送：msg_type",
+        "接收：message_type",
+        "各场景支持情况"
+      ]
+    },
+    {
+      "title": "用户模块",
+      "path": "api-v2/server-inter/user/index.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/user/index.html",
+      "last_updated": "1/12/2026, 12:07:20 PM",
+      "headings": [
+        "用户模块"
+      ]
+    },
+    {
+      "title": "事件",
+      "path": "api-v2/server-inter/user/manage/event.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/user/manage/event.html",
+      "last_updated": "1/15/2026, 4:08:29 PM",
+      "headings": [
+        "事件",
+        "用户添加机器人",
+        "用户删除机器人",
+        "拒绝机器人主动消息",
+        "允许机器人主动消息"
+      ]
+    },
+    {
+      "title": "用户管理",
+      "path": "api-v2/server-inter/user/manage/index.md",
+      "url": "https://bot.q.qq.com/wiki/develop/api-v2/server-inter/user/manage/index.html",
+      "last_updated": "11/22/2023, 4:19:57 PM",
+      "headings": [
+        "用户管理"
+      ]
+    }
+  ]
+}
