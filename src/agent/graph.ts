@@ -3,6 +3,8 @@ import type { ChatMessage, ImagePart, ModelProvider, ToolCall } from "../ports/m
 import type { DeferredAction } from "./actions.js";
 import { agentTools, type AgentTool, type ToolContext } from "./tools.js";
 import { DEFAULT_SYSTEM_TEMPLATE, renderSystemPrompt } from "./prompt.js";
+import { logModelUsage } from "../app/usage.js";
+import type { Logger } from "../app/logger.js";
 
 const State = Annotation.Root({
   messages: Annotation<ChatMessage[]>({
@@ -41,6 +43,7 @@ export type ReplyGraphOptions = {
   maxSteps?: number;
   maxTokens?: number;
   signal?: AbortSignal;
+  logger?: Logger;
 };
 
 const DEFAULT_SYSTEM = renderSystemPrompt(DEFAULT_SYSTEM_TEMPLATE, { name: "MyBot" });
@@ -69,6 +72,11 @@ export function buildReplyGraph(provider: ModelProvider, options: ReplyGraphOpti
       ...(atLimit ? {} : { tools: toolList }),
       maxTokens: options.maxTokens ?? 600,
       ...(options.signal ? { signal: options.signal } : {}),
+    });
+    logModelUsage(options.logger, "reply", response.usage, {
+      ...(options.sessionKey ? { sessionKey: options.sessionKey } : {}),
+      step: state.steps + 1,
+      atLimit,
     });
 
     const assistant: ChatMessage = {

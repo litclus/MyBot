@@ -2,6 +2,7 @@ import { eq, lte } from "drizzle-orm";
 import type { Bot } from "../app/bot.js";
 import type { Logger } from "../app/logger.js";
 import { logger as defaultLogger } from "../app/logger.js";
+import { logModelUsage } from "../app/usage.js";
 import { canProactivelyReply } from "./policy.js";
 import { proactiveSlotAt } from "./slot.js";
 import { parseReplyMessages, type ReplyMessage } from "../chat/reply-format.js";
@@ -53,6 +54,7 @@ export async function generateProactiveReply(input: {
   personaPrompt: string;
   recent: RecentMessage[];
   now: Date;
+  logger: Logger;
 }): Promise<ReplyMessage[] | null> {
   const last = input.recent.at(-1);
   if (!last) return null;
@@ -93,6 +95,10 @@ export async function generateProactiveReply(input: {
     ],
     maxTokens: 260,
     temperature: 0.8,
+  });
+  logModelUsage(input.logger, "proactive", response.usage, {
+    conversationId: input.conversationId,
+    finish: response.finishReason ?? "unknown",
   });
 
   const shards = parseReplyMessages(response.text)
@@ -256,6 +262,7 @@ export class ProactiveScheduler {
       personaPrompt: prompts.personaPrompt,
       recent,
       now: new Date(now),
+      logger: this.log,
     });
 
     if (!reply) {

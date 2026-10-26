@@ -442,6 +442,7 @@ export class Bot {
           ? this.systemPrompt
           : stripImageSaveRules(this.systemPrompt),
         personaPrompt: this.personaPrompt,
+        logger: this.log,
         ...(config.IMAGE_SAVE ? {} : { tools: TOOLS_WITHOUT_IMAGE_SAVE }),
       });
 

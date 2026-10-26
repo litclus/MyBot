@@ -5,6 +5,7 @@ import { memories, messages, persons } from "../db/schema.js";
 import type { ModelProvider } from "../ports/model.js";
 import type { Logger } from "../app/logger.js";
 import { extractJsonObject } from "../util/json.js";
+import { logModelUsage } from "../app/usage.js";
 import { embedText } from "./embedding.js";
 
 const KINDS = new Set([
@@ -59,6 +60,9 @@ type PendingMessage = {
 
 const clamp = (value: number, min: number, max: number) =>
   Math.min(Math.max(value, min), max);
+
+/** 单次最多整理几条，避免 reasoning 把输出预算吃光 */
+const ENRICH_CHUNK_SIZE = 4;
 
 /**
  * 后台记忆加工：
@@ -196,6 +200,14 @@ export class MemoryEnricher {
   }
 
   private async ask(pending: PendingMessage[]): Promise<EnrichItem[]> {
+    const items: EnrichItem[] = [];
+    for (let index = 0; index < pending.length; index += ENRICH_CHUNK_SIZE) {
+      items.push(...(await this.askChunk(pending.slice(index, index + ENRICH_CHUNK_SIZE))));
+    }
+    return items;
+  }
+
+  private async askChunk(pending: PendingMessage[]): Promise<EnrichItem[]> {
     const input = pending.map((message) => ({
       id: message.id,
       name: message.personName ?? "成员",
@@ -232,12 +244,25 @@ export class MemoryEnricher {
     const response = await this.provider.chat({
       sessionKey: "enrich:memory",
       messages: [{ role: "user", parts: [{ type: "text", text: prompt }] }],
-      maxTokens: 1200,
+      maxTokens: 4096,
       temperature: 0,
     });
+    logModelUsage(this.log, "memory-enrich", response.usage, {
+      messages: pending.length,
+      finish: response.finishReason ?? "unknown",
+    });
 
-    const parsed = extractJsonObject(response.text) as { items?: EnrichItem[] };
-    return Array.isArray(parsed.items) ? parsed.items : [];
+    try {
+      const parsed = extractJsonObject(response.text) as { items?: EnrichItem[] };
+      return Array.isArray(parsed.items) ? parsed.items : [];
+    } catch (error) {
+      this.log.warn("memory enrich parse failed", {
+        finish: response.finishReason ?? "unknown",
+        textLength: response.text.length,
+        usage: response.usage,
+      });
+      throw error;
+    }
   }
 
   private async apply(message: PendingMessage, item: EnrichItem): Promise<void> {

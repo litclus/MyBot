@@ -4,7 +4,9 @@ import { config } from "../config.js";
 import { db } from "../db/client.js";
 import { conversations, memories, messages } from "../db/schema.js";
 import type { ModelProvider } from "../ports/model.js";
+import { logModelUsage } from "../app/usage.js";
 import { embedText } from "./embedding.js";
+
 
 /**
  * 阶段摘要：每个群累计 20 条新消息后，压成一条 episode 记忆。
@@ -103,6 +105,11 @@ export class MemorySummarizer {
       ],
       maxTokens: 300,
       temperature: 0,
+    });
+    logModelUsage(this.log, "memory-summary", response.usage, {
+      conversationId,
+      messages: rows.length,
+      finish: response.finishReason ?? "unknown",
     });
 
     const summary = response.text.trim().slice(0, 300);
