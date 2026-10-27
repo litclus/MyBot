@@ -224,6 +224,7 @@ bot name updated DeepSeek
 
 ## 语音回复
 
+- 默认发文字，语音质量一般所以少发；只有短句或确实想玩一下时才用 `voiceText`
 - 面板「语音」组配置 `MIMO_API_KEY`、接口、模型、音色和音色描述
 - 默认用 `mimo-v2.5-tts-voicedesign`，`MIMO_TTS_STYLE` 固定为小萝莉、软糯、轻、偏高，保证每次音色和语气一致
 - `MIMO_TTS_VOICE` 只在 `mimo-v2.5-tts` 预置音色模型下生效
